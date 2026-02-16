@@ -25,6 +25,7 @@ I tried to be as ethical about my script as possible, only taking data from publ
 - **Ethical scraping practices**, using realistic headers and **respect for the website**.
 
 ### Files Included
+- 'title_ids.txt' - The output file from MAL Title Scraper and input file for MADbot.
 - 'main.py' - The main runnable Python script
 - 'title_ids.txt' - The output of the run script including all 29,635 titles saves in the format: Title | MAL_ID | URL
 - 'error_log.txt' - An empty file since I didn't encounter any errors to log while running this script, but I felt it would be prudent to include all files associated with this project.
