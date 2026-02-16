@@ -59,6 +59,7 @@ The followup project from my MAL title scraper. This project is to create a full
 - **Preparing for and executing a large pull** from an API (the entire pull took approximately 30 hours to complete)
 
 ### Files Included
+- 'title_ids.txt' - The outpur file for MAL Title Scraper and input file for MADbot.
 - main.py - The executable Python file.
 - big_dic.jsonl - the collection of json dictionaries, one for each title.
 - Error_log.txt - The error log recorded during the pull. In total 34 errors recorded, all code:500.
