@@ -25,6 +25,7 @@ I tried to be as ethical about my script as possible, only taking data from publ
 - **Ethical scraping practices**, using realistic headers and **respect for the website**.
 
 ### Files Included
+- 'title_ids.txt' - The output file from MAL Title Scraper and input file for MADbot.
 - 'main.py' - The main runnable Python script
 - 'title_ids.txt' - The output of the run script including all 29,635 titles saves in the format: Title | MAL_ID | URL
 - 'error_log.txt' - An empty file since I didn't encounter any errors to log while running this script, but I felt it would be prudent to include all files associated with this project.
@@ -58,9 +59,10 @@ The followup project from my MAL title scraper. This project is to create a full
 - **Preparing for and executing a large pull** from an API (the entire pull took approximately 30 hours to complete)
 
 ### Files Included
-- main.py - The executable Python file.
-- big_dic.jsonl - the collection of json dictionaries, one for each title.
-- Error_log.txt - The error log recorded during the pull. In total 34 errors recorded, all code:500.
+- 'title_ids.txt' - The outpur file for MAL Title Scraper and input file for MADbot.
+- 'main.py' - The executable Python file.
+- 'big_dic.jsonl' - the collection of json dictionaries, one for each title.
+- 'Error_log.txt' - The error log recorded during the pull. In total 34 errors recorded, all code:500.
 
 The output for this project is full of useful data which can be analyzed with Python libraries such as Pandas or MatPlotLib to track trends, possible predictions as to what types of anime might be popular in the future and see the growing pressure on the anime industry as a whole with ever increasing numbers of anime released each year.
 
