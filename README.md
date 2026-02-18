@@ -68,3 +68,40 @@ The output for this project is full of useful data which can be analyzed with Py
 
 ### Prerequisites
 - Requests
+
+
+---
+## Berlin apartment Dataset Builder
+More specifically, this cute little scrip builds a dataset specifically from immobilienscout24.de. I've included this particular project to show how I personally handle websites which are particularly hard to scrape due to over enthusiastic bot-prevention features. I found (personally) the easiest way was to use SingleFile, a Google Chrome extention which can save entire pages directly to your computer with one click. It also has a feature where you can save multiple tabs. What I did here was to load 20-30 tabs into one browser window and using SingleFile, save them all to my harddrive and work on them from there. No need to get around bot prevention since it's a legit browser pulling up the pages. I managed to get all 100 sample listings for this example in just under 5 minutes.
+
+*For privacy and possibly legal reasons, I've not included the sample pages downloaded. This project is for small scale use or personal market analysis purposes only. I strongly advise against disrespecting websites such as Immobilienscout24 or other sites with strong ant-bot measures. Those measures are there for a reason and I prefer to keep my code as ethical and respectful to the websites as possible.*
+
+If you wish to test this code for yourself, simply put a folder into the same directory as main.py called 'listings' and put your sample pages in there.
+
+### Key Features
+- Strips apartment data from immobilienscout24.de page html.
+- Compiles each listing into its own Python dictionary and saves them into a jsonl file.
+
+### Tech Stack
+- SingleFile - Google Chrome web extention to save the raw HTML to my harddrive.
+- Python
+- os - to build a list of files located elsewhere in the folder structure.
+- Beautiful Soup 4 - to parse the html and find the relevant data.
+
+### What I learned during this project
+- How to still get usable data quickly and easily from websites with heavier bot-prevention measures.
+- As the code is not complex, sometimes, simpler options are the best options.
+- Lateral thinking. To think outside the box and use unconventional means to gather useful data.
+
+### Files Included
+- 'main.py' - The executable Python file.
+- 'listings.jsonl' - Output file complete with dataset of 100 sample listings.
+
+### Files NOT included
+- '/listings/anything.html' - The sample listings I pulled directly from immobilienscout24.de.
+
+This project was a fantastic exercise in lateral thinking. What is the easiest way to circumvent aggressive anti-bot measures?
+
+### Prerequisites
+- BS4 (Beautiful Soup 4)
+- 'listings' folder in the SAME DIRECTORY as 'main.py'.
